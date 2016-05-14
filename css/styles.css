@@ -1,3 +1,162 @@
-h1 {
-    color:red;
+ /* ===============================
+   Colour Palette:
+   ---------------
+   Dark Grey:	#3e3939
+   Red:			#dd412b
+   Black:		#303030
+   Yelkow:		#fff600
+   =============================== */
+ /* General */
+
+ html {
+     font-size: 16px;
+ }
+
+ body {
+     width: 100%;
+     margin: 0 auto;
+     font-family: 'Arial';
+     font-size: 1rem;
+     color: #3e3939;
+ }
+
+ .container {
+     width: 100%;
+     max-width: 1128px;
+     margin: 0 auto;
+ }
+
+@media all and (max-width:1127px) {
+    .container {
+        width:90%;
+    }
+
+
 }
+ /* Typography */
+
+ h1 {
+     font-size: 42px;
+ }
+
+ h2 {
+     font-size: 32px;
+ }
+
+ h3 {
+     font-size: 1.424rem;
+ }
+
+ p {}
+
+ a,
+ time {
+     color: #fff600;
+     transition: all .5s ease;
+     text-decoration: none;
+ }
+
+ a:hover {
+     color: #303030;
+ }
+ /* Main Header */
+
+ #mainHeader {
+     width: 100%;
+     background: url(../images/pattern.gif);
+ }
+
+ #mainHeader>div {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 100%;
+     padding-top: 2rem;
+ }
+
+ #mainHeader header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+ }
+
+ #mainHeader header img {
+     width: 32%;
+     display: block;
+ }
+
+ #newsZone {
+     position: relative;
+     width: 30%;
+     background-color: black;
+     color: white;
+     padding: 1% 3%;
+}
+
+ #newsZone p {
+     background: url(../images/quote.jpg);
+     background-repeat: no-repeat;
+     background-position: left top;
+     padding: 15% 10% 0 10%;
+     font-weight: bold;
+     line-height: 1.5rem;
+ }
+
+ #newsZone p time {
+     display: block;
+     padding-top: 5%;
+ }
+
+ .arrowDown {
+     position: absolute;
+     width: 0;
+     height: 0;
+     border-left: 50px solid transparent;
+     border-top: 20px solid #000;
+     bottom: -7%;
+     right: 0;
+ }
+
+ #mainNav {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+ }
+
+ #mainNav ul {
+     display: flex;
+     justify-content: space-around;
+     width: 60%;
+     padding: 1% 0;
+ }
+
+ #mainNav ul li a {
+     font-size: 1.424rem;
+     font-weight: bold;
+     color: white;
+ }
+
+ #twitterLink {
+     position:relative;
+     width: 40%;
+     text-align: center;
+     font-weight: bold;
+ }
+
+#twitterLink img {
+    position:absolute;
+    bottom:-10px;
+    right:0;
+}
+
+#twitterLink p {
+    padding-top:1rem;
+}
+
+ #twitterLink a {
+     color: white;
+ }
+
+/* Main Content */
+
