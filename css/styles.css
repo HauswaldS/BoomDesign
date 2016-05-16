@@ -183,9 +183,9 @@
      justify-content: space-between;
  }
 
-#mainContent>div p {
-    font-weight:bold;
-}
+ #mainContent>div p {
+     font-weight: bold;
+ }
 
  #portfolio,
  #testimony {
@@ -194,13 +194,13 @@
      flex-direction: column;
  }
 
-#aboutUs {
-    display:flex;
-    flex-direction: column;
-    width:25%
-}
+ #aboutUs {
+     display: flex;
+     flex-direction: column;
+     width: 25%
+ }
 
-.readMore h3 a {
+ .readMore h3 a {
      color: #3e3939;
      transition: all ease .5s;
  }
@@ -217,8 +217,11 @@
  #testimony img {
      width: 100%;
  }
+ /*Portfolio*/
 
-/*Portfolio*/
+.portfolioItem:last-of-type {
+    margin-bottom:1rem;
+}
 
  .overlayItem {
      position: relative;
@@ -250,80 +253,106 @@
  .overlayItem:hover:before {
      opacity: 1;
  }
+ /*News Section*/
 
-/*News Section*/
+ #aboutUs aside {
+     text-align: justify;
+ }
 
-#aboutUs aside {
-    text-align: justify;
-}
+ #aboutUs aside h1 {
+     margin-top: .9rem;
+ }
 
-#aboutUs aside h1 {
-    margin-top:.9rem;
-}
+ #newsSection header {
+     display: flex;
+     justify-content: space-between;
+ }
 
-#newsSection header {
-    display:flex;
-    justify-content: space-between;
-}
+ #newsSection header img {
+     margin: 1.6rem auto;
+ }
 
-#newsSection header img {
-    margin:1.6rem auto;
-}
+ .newsItem {
+     display: flex;
+     justify-content: space-between;
+ }
 
-.newsItem {
-    display:flex;
-    justify-content: space-between;
-}
+ .newsDate {
+     width: 20%;
+     display: flex;
+     flex-direction: column;
+ }
 
-.newsDate {
-    width:20%;
-    display:flex;
-    flex-direction: column;
-}
+ .newsDate span {
+     display: block;
+ }
 
-.newsDate span {
-    display:block;
-}
+ .newsContent {
+     width: 70%;
+ }
 
-.newsContent {
-    width:70%;
-}
+ .newsContent p {
+     line-height: 2rem;
+     text-align: justify;
+ }
+ /*Testimony*/
 
-.newsContent p {
-    line-height:2rem;
-    text-align: justify;
-}
+ #testimony header {
+     display: flex;
+     flex-direction: column;
+ }
 
-#testimony header {
-    display:flex;
-    flex-direction: column;
-}
+ #testimony header img {
+     width: 82%;
+ }
 
-#testimony header img {
-    width:82%;
-}
+ #testimony aside {
+     position: relative;
+     background-color: #fff600;
+     padding: .6rem 3.5rem;
+ }
 
-#testimony aside {
-    position:relative;
-    background-color:#fff600;
-    padding:.6rem 3.5rem;
-}
+ #testimony aside p {
+     text-align: justify;
+ }
 
-#testimony aside p {
-    text-align: justify;
-}
+ #testimony aside p a {
+     color: #3e3939;
+ }
 
-#testimony aside p a {
-    color:#3e3939;
-}
-
-#testimony aside>div {
+ #testimony aside>div {
      position: absolute;
      width: 0;
      height: 0;
-     border-left:0px solid transparent;
+     border-left: 0px solid transparent;
      border-right: 50px solid transparent;
      border-top: 20px solid #fff600;
      bottom: -7%;
      left: 0;
  }
+
+/*Main footer*/
+
+#mainFooter {
+    width:100%;
+    color:white;
+    margin-top:3rem;
+}
+
+section>div {
+    display:flex;
+    justify-content: space-between;
+}
+
+#footerContent {
+ background:url(../images/pattern.gif);
+    width:100%;
+}
+
+#footerInfo {
+    background-color:black;
+    width:100%;
+}
+
+#footerInfo>div div:last-of-type {
+}
