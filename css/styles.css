@@ -1,4 +1,4 @@
- /* ===============================
+     /* ===============================
    Colour Palette:
    ---------------
    Dark Grey:	#3e3939
@@ -209,7 +209,6 @@
      color: #303030;
      text-decoration: none;
  }
-
  /*Portfolio*/
 
  .portfolioItem:last-of-type {
@@ -259,7 +258,7 @@
  #newsSection header {
      display: flex;
      justify-content: space-between;
-     margin-top:-1rem;
+     margin-top: -1rem;
  }
 
  #newsSection header img {
@@ -269,7 +268,7 @@
  .newsItem {
      display: flex;
      justify-content: space-between;
-     padding-left:1rem;
+     padding-left: 1rem;
  }
 
  .newsDate {
@@ -291,12 +290,13 @@
      text-align: justify;
  }
 
-.newsContent a {
-    color: #303030;
-}
-.newsContent a:hover {
-    color: #3e3939;
-}
+ .newsContent a {
+     color: #303030;
+ }
+
+ .newsContent a:hover {
+     color: #3e3939;
+ }
  /*Testimony*/
 
  #testimony header {
@@ -343,6 +343,7 @@
  section>div {
      display: flex;
      justify-content: space-between;
+     align-items: center;
  }
 
  #footerContent {
@@ -350,9 +351,47 @@
      width: 100%;
  }
 
+ #services {
+     display: flex;
+     flex-direction: column;
+ }
+
+ #services h2 {
+     width: 100%;
+     margin-bottom: 0;
+ }
+
+ #services div {
+     display: flex;
+     justify-content: space-between;
+ }
+
+#services div ul {
+    padding-left:0;
+}
+
+ #services div ul li {
+     display: block;
+     margin: 1rem 0;
+     padding-left: 17px;
+     background: url(../images/puce.jpg);
+     background-position: left center;
+     background-repeat: no-repeat;
+ }
+
+ #services div ul li a {
+     color: #FFF;
+}
+
  #footerInfo {
      background-color: black;
      width: 100%;
  }
+#footerInfo div:first-of-type {
+    width:90%;
+    text-align:left;
+}
 
- #footerInfo>div div:last-of-type {}
+#footerInfo div:last-of-type {
+    text-align: right;
+}
