@@ -7,6 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/sliderkit-core.css" media="screen, projection" />
+    <script type="text/javascript" src="js/jquery-1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sliderkit.1.9.2.js"></script>
+    <script type="text/javascript" src="js/modernizr-custom.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () { //$(window).load() must be used instead of $(document).ready() because of Webkit compatibility
+
+            // Photo slider > Minimal
+            $(".contentslider-std").sliderkit({
+                auto: 0,
+                tabs: 1,
+                circular: 1,
+                panelfx: "sliding",
+                panelfxfirst: "fading",
+                panelfxeasing: "easeInOutExpo",
+                fastchange: 0,
+                keyboard: 1
+            });
+
+        });
+    </script>
 </head>
 
 <body>
@@ -14,11 +37,26 @@
         <div class="container">
             <header role="banner">
                 <img src="images/logo.png" alt="Design Boom Logo">
-                <article id="newsZone">
-                    <p>A si nisi eiusmod qui laboris <a href="">labore malis arbitror quis</a>, non anim possumus graviterque o lorem arbitror se iudicem.
-                        <time>473 days ago</time>
-                    </p>
-                    <div class="arrowDown"></div>
+                <article id="newsZone" class="sliderkit contentslider-std">
+                    <div class="wrapper">
+                        <div class="sliderkit-panels">
+                            <div class="sliderkit-panel">
+                                <p>A si nisi eiusmod qui laboris <a href="">labore malis arbitror quis</a>, non anim possumus graviterque o lorem arbitror se iudicem.</p>
+                                <time>473 days ago</time>
+                            </div>
+                            <div class="sliderkit-panel">
+                                <p>A si nisi eiusmod qui laboris <a href="">labore malis arbitror quis</a>, non anim possumus graviterque o lorem arbitror se iudicem.</p>
+                                <time>67 days ago</time>
+                            </div>
+                            <div class="sliderkit-panel">
+                                <p>A si nisi eiusmod qui laboris <a href="">labore malis arbitror quis</a>, non anim possumus graviterque o lorem arbitror se iudicem.</p>
+                                <time>43 days ago</time>
+                            </div>
+                        </div>
+                        <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><a href="#" title="Previous"><span>Previous</span></a></div>
+                        <div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"><a href="#" title="Next"><span>Next</span></a></div>
+                        <div class="arrowDown"></div>
+                    </div>
                 </article>
             </header>
             <!-- /*banner-->
@@ -180,6 +218,7 @@
         <!--*/siteInfos-->
     </footer>
     <!--*/mainFooter-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
